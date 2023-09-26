@@ -1,0 +1,42 @@
+---
+import RootLayout from "../layouts/RootLayout.astro";
+import Header from "../components/Header.astro";
+import SectionProject from "../components/SectionProject.astro";
+import SectionEducation from "../components/SectionEducation.astro";
+import SectionVolunteering from "../components/SectionVolunteering.astro";
+import Footer from "../components/Footer.astro";
+import SocialMedia from "../components/SocialMedia.astro";
+---
+
+<RootLayout title="Portfolio - Matias Appella">
+  <Header />
+  <div id="introduction" class="py-10">
+    <h4 class="mx-1 font-medium tracking-wide">Hey, I'm</h4>
+    <h1
+      class="inline-block text-[3.5em] font-bold bg-clip-text text-transparent bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 dark:from-green-300 dark:via-blue-500 dark:to-purple-600 sm:text-[5em]"
+    >
+      Matias Appella
+    </h1>
+    <h4
+      class="mx-1 mb-5 text-lg dark:text-slate-300 text-slate-600 tracking-widest"
+    >
+      FullStack Developer
+    </h4>
+    <p class="mx-1 text-lg font-medium tracking-wide">
+      Responsible, disciplined, diligent and perfectionist professional. I
+      consider myself a friendly person, communicative, enthusiastic, with ample
+      leadership skills and good for teamwork. I am characterized by being
+      capable and efficient in solving problems during the development process.
+      Always predisposed to work and without fear of change, willing to find
+      ways to achieve the proposed objectives regardless of the effort that
+      these require.
+    </p>
+  </div>
+  <SocialMedia />
+  <main>
+    <SectionProject />
+    <SectionEducation />
+    <SectionVolunteering />
+  </main>
+  <Footer />
+</RootLayout>

@@ -1,0 +1,48 @@
+---
+import ArticleCard from "./ArticleCard.astro";
+---
+
+<section id="project" class="pt-10 sm:flex">
+  <h2 class="text-[1.5em] mb-5 sm:w-48">PROJECTS</h2>
+  <div id="project-content" class="sm:flex-1 mt-1">
+    <ArticleCard
+      title="Pokemon Web Application"
+      subtitle="Academic Experience - Henry Bootcamp"
+      responsabilities={[
+        "Individual project done in a period of 2 weeks where the knowledge acquired in the Bootcamp was demonstrated.",
+        "Implemented React as a library for the development of user interface.",
+        "Application state managed with Redux.",
+        "Server built with Express.",
+        "PostgreSQL used as database.",
+        "Sequelize ORM implementation for queries, management and creation of database models.",
+      ]}
+      date="Aug 2023"
+    />
+    <ArticleCard
+      title="Rick & Morty Web Application"
+      subtitle="Academic Experience - Henry Bootcamp"
+      responsabilities={[
+        "Integration project done in the first two months of the Bootcamp.",
+        "Implemented React as a library for the development of user interface.",
+        "Application state managed with Redux.",
+        "Server built with Express.",
+        "PostgreSQL used as database.",
+        "Sequelize ORM implementation for queries, management and creation of database models.",
+      ]}
+      date="July 2023"
+    />
+    <ArticleCard
+      title="Active Desktop Application"
+      subtitle="Academic Experience - Instituto Superior Experimental de Tecnología Alimentaria"
+      responsabilities={[
+        "Group practical project in order to provide an IT solution to a real client",
+        "Multiple interviews were performed to determine the scope of the system.",
+        "User and system requirements were defined.",
+        "Implemented in Visual Studio development platform, programmed in Visual Basic .NET language.",
+        "Microsoft Access was incorporated as database.",
+        "The ACTIVE desktop application was formally delivered, for the registration of purchase/sale operations related to the association 'Nacimos para ti' (We were born for you).",
+      ]}
+      date="Nov 2017 - Dec 2018"
+    />
+  </div>
+</section>

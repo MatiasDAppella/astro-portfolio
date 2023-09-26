@@ -1,0 +1,37 @@
+---
+import ArticleCard from "./ArticleCard.astro";
+---
+
+<section id="education" class="pt-10 sm:flex">
+  <h2 class="text-[1.5em] mb-5 sm:w-48">EDUCATION</h2>
+  <div id="education-content" class="sm:flex-1 mt-1">
+    <ArticleCard
+      title="Henry Bootcamp"
+      subtitle="Web Developer - Full Stack"
+      responsabilities={[
+        "Trained in application development using JavaScript as programming language.",
+        "Instructed in the operation of Node as runtime environment.",
+        "Updated to the use of libraries such as React for user interface development, and Redux for state management.",
+        "Prepared for development of APIs and servers, adapted to the REST architecture, using Express framework.",
+        "Voted by my peers as the best project in the integration stage.",
+        "Rated with excellent technical and soft grades in the presentation of the final Individual Project.",
+        "Applied to the Teaching Assistant program and accompaniment of newly incorporated students.",
+      ]}
+      date="Jun 2023 - Oct 2023"
+    />
+    <ArticleCard
+      title="Instituto Superior Experimental de Tecnología Alimentaria"
+      subtitle="Systems Analyst Technician"
+      responsabilities={[
+        "Capable for development of desktop applications, using Visual Basic as programming language.",
+        "Trained in Visual Studio as programming environment, object oriented.",
+        "Instructed in active communication and interaction with users in order to optimize the performance of the product under development.",
+        "Exercised in Microsoft Access database development, managing information flow through SQL language.",
+        "Practicing as an initial tool for the logical deductive process, the implementation of pseudocode.",
+        "Experiencing constant communication and teamwork as an incentive for professional and personal growth.",
+      ]}
+      date="Jan 2014 - dec 2018"
+      longTitle={true}
+    />
+  </div>
+</section>

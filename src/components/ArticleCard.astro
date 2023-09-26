@@ -1,0 +1,36 @@
+---
+const {
+  title,
+  subtitle,
+  responsabilities,
+  date,
+  longTitle = false,
+} = Astro.props;
+---
+
+<article class="relative pb-16">
+  <h3 class="text-[1.2em] font-bold">{title}</h3>
+  <h4
+    class:list={[
+      "bg-clip-text text-transparent text-lg font-bold bg-gradient-to-r from-teal-600 to-cyan-600 dark:from-teal-300 dark:to-cyan-300 tracking-wide",
+      {
+        "lg:mb-4": longTitle,
+        "md:mb-4": !longTitle,
+      },
+    ]}
+  >
+    {subtitle}
+  </h4>
+  <span
+    class:list={[
+      "inline-block tracking-tighter mb-4 text-gray-600 dark:text-gray-300",
+      {
+        "lg:absolute lg:top-[.25em] lg:right-0": longTitle,
+        "md:absolute md:top-[.25em] md:right-0": !longTitle,
+      },
+    ]}>{date}</span
+  >
+  <ul class="text-gray-600 dark:text-gray-300">
+    {responsabilities.map((task: string) => <li>{`✓ ${task}`}</li>)}
+  </ul>
+</article>
